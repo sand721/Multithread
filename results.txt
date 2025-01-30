@@ -1,0 +1,7 @@
+Processor	AMD Ryzen 7 8845HS w/ Radeon 780M Graphics   3.80 GHz
+Installed RAM	16.0 GB (15.3 GB usable)
+
+  Размер            LINQ    Параллельное         Обычное
+  100000              44             164               0
+ 1000000               3             203               1
+10000000              26             231              13
