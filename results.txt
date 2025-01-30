@@ -1,5 +1,6 @@
-Processor	AMD Ryzen 7 8845HS w/ Radeon 780M Graphics   3.80 GHz
-Installed RAM	16.0 GB (15.3 GB usable)
+Windows 11 Pro 24H2
+Processor: AMD Ryzen 7 8845HS w/ Radeon 780M Graphics   3.80 GHz
+RAM 16.0 GB (15.3 GB usable)
 
   Размер            LINQ    Параллельное         Обычное
   100000              44             164               0
