@@ -38,6 +38,12 @@ return;
 
 void ShowEvironmetInfo()
 {
+    ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT Name FROM Win32_Processor");
+    foreach (ManagementObject obj in searcher.Get())
+    {
+        // Выводим название процессора
+        Console.WriteLine($"Processor Name: {obj["Name"]} / Threads: {Environment.ProcessorCount}" );
+    }
 // Получаем объем оперативной памяти
     ManagementObjectSearcher memorySearcher = new ManagementObjectSearcher("SELECT TotalPhysicalMemory FROM Win32_ComputerSystem");
     foreach (ManagementObject obj in memorySearcher.Get())
@@ -54,12 +60,6 @@ void ShowEvironmetInfo()
         string osVersion = obj["Version"].ToString();
         Console.WriteLine($"OS Name: {osName}");
         Console.WriteLine($"OS Version: {osVersion}");
-    }
-    ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT Name FROM Win32_Processor");
-    foreach (ManagementObject obj in searcher.Get())
-    {
-        // Выводим название процессора
-        Console.WriteLine($"Processor Name: {obj["Name"]} / Threads: {Environment.ProcessorCount}" );
     }
 }
 
