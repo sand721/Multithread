@@ -6,3 +6,13 @@ RAM 16.0 GB (15.3 GB usable)
   100000              44             164               0
  1000000               3             203               1
 10000000              26             231              13
+
+
+Processor Name: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz / Threads: 28
+Total RAM: 127,84 GB
+OS Name: Microsoft Windows 11 Enterprise LTSC
+OS Version: 10.0.26100
+         Размер            LINQ   Параллельное        Обычное
+         100000              31             266               0
+        1000000               2             298               2
+       10000000              28             296              25
