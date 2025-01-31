@@ -59,7 +59,7 @@ void ShowEvironmetInfo()
     foreach (ManagementObject obj in searcher.Get())
     {
         // Выводим название процессора
-        Console.WriteLine("Processor Name: " + obj["Name"]);
+        Console.WriteLine($"Processor Name: {obj["Name"]} / Threads: {Environment.ProcessorCount}" );
     }
 }
 
