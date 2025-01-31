@@ -46,7 +46,6 @@ void ShowEvironmetInfo()
         double totalMemoryGB = totalMemoryBytes / (1024.0 * 1024.0 * 1024.0);
         Console.WriteLine($"Total RAM: {totalMemoryGB:F2} GB");
     }
-
 // Получаем информацию о версии ОС
     ManagementObjectSearcher osSearcher = new ManagementObjectSearcher("SELECT Caption, Version FROM Win32_OperatingSystem");
     foreach (ManagementObject obj in osSearcher.Get())
