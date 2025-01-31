@@ -8,6 +8,16 @@ OS Version: 10.0.26100
         1000000               4             162               1
        10000000              31             191              14
 
+Sand2
+Processor Name: AMD Ryzen 7 5700U with Radeon Graphics          / Threads: 16
+Total RAM: 15,33 GB
+OS Name: Майкрософт Windows 11 Pro
+OS Version: 10.0.22631
+         Размер            LINQ   Параллельное        Обычное
+         100000              11               2               0
+        1000000              30               2               2
+       10000000             125               4              21
+
 
 Sand
 Processor Name: Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz / Threads: 28

@@ -42,7 +42,8 @@ void ShowEvironmetInfo()
     foreach (ManagementObject obj in searcher.Get())
     {
         // Выводим название процессора
-        Console.WriteLine($"Processor Name: {obj["Name"]} / Threads: {Environment.ProcessorCount}" );
+        string processoName = obj["Name"].ToString().Trim();
+        Console.WriteLine($"Processor Name: {processoName} / Threads: {Environment.ProcessorCount}" );
     }
 // Получаем объем оперативной памяти
     ManagementObjectSearcher memorySearcher = new ManagementObjectSearcher("SELECT TotalPhysicalMemory FROM Win32_ComputerSystem");
